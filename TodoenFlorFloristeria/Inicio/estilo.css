@@ -1,0 +1,432 @@
+/*poner color a todos los botones*/
+:root{
+    --pink:#f5a0d2;
+}
+/* se usa para quitar los puntos de las listas*/
+*{
+    margin:0; padding:0;/*establecer la margen de un elemneto y relleno interno*/
+    box-sizing: border-box;/*calcula el ancho y la altura*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;/*se alistan varias fuentes en orden*/
+    outline: none; border:none;/*elimina el contorno elinima el borde*/
+    color: rgb(11, 12, 12);/*color del texto*/
+    text-decoration: none;/*decoracion del texto no estara subrayado*/
+    
+    
+}
+/* tamaño de la fuente, desplazamintos evita que el contenido se esconda y organiza la pagina */
+html{
+    font-size: 69.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+header{
+    position: fixed;/*se queda fijo arriba al hacer desplazamiento*/
+    top: 0; left: 0; right: 0;/*lo pega completamente a la parte superior*/
+    background:rgb(250, 231,246);/*color de fondo */
+    padding:2rem 9%;/*espacio interno*/
+    display: flex;/*alinear los elementos*/
+    align-items: center;/*centrar los elementos*/
+    justify-content: space-between;/*deja espacio entre los elementos*/
+    z-index: 1000;/*asegura que el header quede por encima de todo*/
+}
+/*centra y estandariza el diseño de los encabezados de la pagina web*/
+.p{
+    text-align: center;
+    font-size: 3rem;
+    color:#050505 ;
+    padding:1rem;
+    margin:2rem 0;
+    background: #dfbdbd;
+}
+/* enlace de menu pricipal*/
+header .menu a {
+    color: #080808fd;
+    font-size: 1.8rem;
+    margin-right: 2rem;
+}
+/*cambio de color cuando se pasa el mouse*/
+header .menu a:hover{
+    color:var(--pink);
+}
+/*iconos del encabezado*/
+header .icons a{
+    font-size: 2.5rem;
+    color:#000000;
+    margin-left: 1.5rem;
+}
+/*color de iconos al pasar el mose*/
+header .icons a:hover{
+    color: var(--pink);
+}
+
+/*para poner una imagen de fondo*/
+.tienda{
+    display: flex;
+    align-items: center;
+    min-height: 95vh;
+    background: url(/Images/foto-fondo.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #232024;
+}
+.heading{
+    font-size: 48px;/*tamaño de la letra*/
+    font-weight: bold;/*grosor de la fuente en negrita*/
+    margin-top: 100px;/*margen superior del elemento*/
+    margin-bottom: 30px;/*margen inferior*/
+    color: #060606;/*color de texto*/
+}
+/*boton de comprar flores*/
+.comprar{
+    display: inline-block;
+    margin-top: 40px; /*estos baja el botan*/
+    border-radius: 5rem;
+    background: #eeaac6;
+    color: #eceaea;
+    padding:.9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+/*esteblese color de fondo del boton*/
+.comprar:hover{
+    background:var(--pink)
+}
+
+.informacion{
+    text-align: center;
+    font-size: 4rem;
+    color: #0d0d0d;
+    padding: 1rem;
+    margin: 2rem 0;
+    background: #f3b3cd;
+
+}
+span{
+    color: #f1eef0;
+    font-size: medium;
+    text-decoration: underline;
+}
+
+.about .fila{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+}
+.about .fila .imagen{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+}
+.about .fila .imagen img{
+    width: 100%;
+    border: 0rem solid#d699bc;
+    border-radius: 5rem;
+    box-shadow: 0 .5rem 1rem #030303
+
+}
+.contenido{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+.imagen{
+    margin-right: 2opx;
+}
+img{
+    max-width: 300px;
+    height: auto;
+}
+/*comprar los mas vendidos*/
+.btn{
+    display: inline-block;
+    margin-top: 50px; /*estos baja el botan*/
+    border-radius: 5rem;
+    background: #eeaac6;
+    color: #fcf6f6;
+    padding:.9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+/*esteblese color de fondo del boton*/
+
+.btn:hover{
+    background:var(--pink)
+}
+body{
+    background-color: #fdfcfd;
+}
+
+/* Estilo del título (opcional) */
+
+
+h1 {
+    font-size: 2.5rem; /* Tamaño grande para encabezados principales */
+    color: #f5aee5; /* Color atractivo para el encabezado */
+    margin-bottom: 10px; /* Espacio debajo del encabezado */
+    text-align: center;
+}
+
+
+
+
+
+/* Estilo de la tabla */
+table {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: rgb(250, 231,246);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de las imágenes en el encabezado */
+thead img {
+  width: 100%;
+  max-width: 325px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+/* Efecto zoom al pasar el mouse */
+thead img:hover {
+  transform: scale(1.05);
+}
+
+/* Estilo de celdas */
+th, td {
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #dbc4c4;
+  color: #333;
+  font-size: 16px;
+}
+
+/* Fila con efecto hover */
+tbody tr:hover {
+  background-color: #e7dfdf;
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+  thead img {
+    max-width: 100%;
+  }
+
+  table, th, td {
+    font-size: 19px;
+  }
+}
+
+
+/*iconos de redes sociales*/
+.redes-sociales{
+    text-align: center;
+    margin-top: 20px;
+}
+.redes-sociales a{
+    display: inline-block;
+    margin: 0 19px;
+    font-size: 28px;
+    color: white;
+    background-color: #e0c8c8;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: 0.3s;
+    text-align: center;
+}
+.redes-sociales a:hover{
+    background-color: #e590b3;
+}
+.facebook{background-color: #000000;}
+.instagram{background-color: #050505;}
+.Correo Electronico{ background-color: #232024;}
+
+/*CONTACTANOS*/
+/* Estilo general del formulario */
+.formulario {
+  background-color: #f7e7ed;
+  padding: 2rem;
+  border-radius: 20px;
+  max-width: 600px;
+  margin: 2rem auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Estilo para etiquetas */
+.formulario label {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+  color: #d63384;
+  font-weight: bold;
+}
+
+/* Inputs, selects y textarea */
+.formulario input,
+.formulario select,
+.formulario textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+/* Botón */
+.formulario button {
+  margin-top: 1.5rem;
+  background-color: #d63384;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.formulario button:hover {
+  background-color: #c2185b;
+}
+
+/* Responsivo */
+@media (max-width: 300px) {
+  .formulario {
+    padding: 1rem;
+  }
+}
+/* Contenedor en columnas */
+.contenedor-contacto {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem;
+  flex-wrap: wrap; /* Para que se acomode en pantallas pequeñas */
+}
+
+/*INICIAR SESION*/
+/* Estilo general del body */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color:#fdfcfd;
+}
+
+/* Sección principal de contacto */
+#contacto {
+  padding: 50px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Título */
+#contacto h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #f5aee5;
+}
+
+/* Contenedor general */
+.contenedor-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Información de contacto */
+.info-contacto p {
+  font-size: 16px;
+  color: #050505;
+  margin: 6px 0;
+}
+
+/* Redes sociales */
+.redes-sociales p {
+  font-size: 16px;
+  color: #0e0e0e;
+  margin-bottom: 5px;
+}
+
+.redes-sociales a {
+  color: #080808;
+  text-decoration: none;
+  margin-right: 12px;
+  font-weight: bold;
+}
+
+.redes-sociales a:hover {
+  text-decoration: underline;
+}
+
+/* Mapa */
+.mapa iframe {
+  width: 300%;
+  height: 300px;
+  border-radius: 8px;
+  border: none;
+}
+
+/* Formulario */
+.formulario-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formulario-contacto label {
+  font-weight: bold;
+  color:#d63384;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  padding: 10px;
+  font-size: 19px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.formulario-contacto button {
+  background-color: #eeaac6;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formulario-contacto button:hover {
+  background-color: #388e3c;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  #contacto {
+    padding: 30px 10px;
+  }
+
+  .formulario-contacto button {
+    font-size: 14px;
+  }
+}
+

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../Inicio/estilo.css">
+
+    <title>contactanos </title>
+    
+</head>
+<body>
+    <header> 
+        <a href="/Inicio/Index.html">
+        <img src="/Images/logo.jpeg" width="150"
+        alt="Es el logo de Todo en Flor Floristeria"/></a>
+
+        <nav class="menu">        
+                <a href="/Tienda/Index.html">Tienda</a>
+                <a href="/NuestraHistoria/Index.html">Nuestra Historia</a>
+                <a href="/Contactanos/Index.html">contactanos</a>
+                <a href="/iniciarsesion/index.html">iniciar sesion</a>
+                
+                
+        </nav>
+         <section class="icons">
+            
+            <a href="/Carritodecompras/Index.html" class="fas fa-shopping-cart"></a>
+            
+         </section>
+         </head>
+         </header><br><br><br><br><br><br><br><br><br><br>
+
+         <section id="contacto">
+    <h2>Contáctanos</h2>
+
+    <div class="contenedor-contacto">
+
+      <!-- Información de contacto -->
+      <div class="info-contacto">
+        <p><strong>📍 Dirección:</strong> Calle Falsa 123, Bogotá, Colombia</p>
+        <p><strong>📞 Teléfono:</strong> +57 300 123 4567</p>
+        <p><strong>📞 Fijo:</strong> (1) 234 5678</p>
+        <p><strong>✉️ Email:</strong> contacto@tuempresa.com</p>
+      </div>
+
+      <!-- Redes sociales -->
+     <!-- Redes sociales con íconos -->
+<div class="redes-sociales">
+  <p><strong>📱 Síguenos en:</strong></p>
+  <a href="https://wa.me/573001234567" target="_blank">
+    <i class="fab fa-whatsapp"></i> 
+  </a>
+  <a href="https://www.instagram.com/tuempresa" target="_blank">
+    <i class="fab fa-instagram"></i> 
+  </a>
+  <a href="https://www.facebook.com/tuempresa" target="_blank">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+  <a href="mailto:ejemplo@correo.com" class="email"><i class="fas fa-envelope"></i></a>
+            <label for="correoelectronico"></label>
+</div>
+
+      <!-- Mapa -->
+      <div class="mapa">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.843137620451!2d-74.08175368523814!3d4.609710343636179!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99c63bffab41%3A0x2f9a8c063b924c6e!2sBogot%C3%A1%2C%20Colombia!5e0!3m2!1ses!2sco!4v1611866625901!5m2!1ses!2sco"
+          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+
+      <!-- Formulario de contacto -->
+       <h1>si tienes algun problema o inquietud no dudes en contactarnos</h1>
+      <form class="formulario-contacto" action="enviar.php" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+        <button type="submit">Enviar mensaje</button>
+      </form>
+
+    </div>
+  </section>
+
+</body>
+</html>
